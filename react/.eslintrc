@@ -44,6 +44,7 @@
 			"afterOpening": "never",
 			"beforeClosing": "never"
 		}],
+		"react/jsx-boolean-value": ["error"],
         "func-style": ["error", "declaration", {
             "allowArrowFunctions": true
         }],

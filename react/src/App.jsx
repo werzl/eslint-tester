@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+import TestComponent from "./TestComponent";
+
 function app() {
     return (
         <div className="App">
@@ -14,10 +16,13 @@ function app() {
                     className="App-link"
                     href="https://reactjs.org"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    hidden>
                     Learn React
                 </a>
             </header>
+
+            <TestComponent ShowDiv />
         </div>
     );
 }
