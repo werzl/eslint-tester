@@ -7,11 +7,14 @@
         "jest": true
     },
 	"plugins": [
-		"react"
+		"react",
+        "jsx-a11y",
+        "react-hooks"
 	],
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended"
     ],
 	"settings": {
 		"react": {
@@ -45,6 +48,10 @@
 			"beforeClosing": "never"
 		}],
 		"react/jsx-boolean-value": ["error"],
+        "react/no-array-index-key": ["error"],
+        "react/jsx-wrap-multilines": ["error"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
         "func-style": ["error", "declaration", {
             "allowArrowFunctions": true
         }],
